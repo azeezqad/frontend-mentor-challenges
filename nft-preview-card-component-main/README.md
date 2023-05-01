@@ -12,7 +12,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- [Demo]()
+- [Demo](https://azeezqad.github.io/frontend-mentor-challenges/nft-preview-card-component-main/)
 
 ### Built with
 

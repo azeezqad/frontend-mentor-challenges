@@ -11,7 +11,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- [Demo]()
+- [Demo](https://azeezqad.github.io/frontend-mentor-challenges/profile-card-component-main/)
 
 ### Built with
 
