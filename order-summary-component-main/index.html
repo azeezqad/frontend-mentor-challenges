@@ -1,37 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Order summary card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* - Mobile: 375px
+      - Desktop: 1440px */
+      :root {
+        --pale-blue: hsl(225, 100%, 94%);
+        --bright-blue: hsl(245, 75%, 52%);
+        --very-pale-blue: hsl(225, 100%, 98%);
+        --desaturated-blue: hsl(224, 23%, 55%);
+        --dark-blue: hsl(223, 47%, 23%);
+      }
+      * {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        font-family: "Red Hat Display", sans-serif;
+        color: var(--desaturated-blue);
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-color: var(--pale-blue);
+        position: relative;
+      }
+      main {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+      }
+      main #top-bg {
+        height: 175px;
+      }
+      main #top-bg img {
+        width: 350px;
+        height: 100%;
+      }
+      main #content {
+        padding: 28px;
+        background: var(--very-pale-blue);
+      }
+      h1,
+      h2 {
+        color: var(--dark-blue);
+      }
+      main #content h1 {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+      }
+      main #plan-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        place-items: center;
+        gap: 15px;
+        margin: 30px auto;
+      }
+      main #plan-section #plan {
+        display: flex;
+        flex-direction: column;
+      }
+      main #plan-section a {
+        grid-column: 4 / span 5;
+      }
+      main #plan-section a:hover {
+        text-decoration: none;
+        color: hsl(245, 63%, 64%);
+      }
+      main #btns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      main #btns a {
+        text-decoration: none;
+        color: white;
+      }
+      main #btn {
+        background-color: var(--bright-blue);
+        padding: 10px;
+        border-radius: 12px;
+      }
+      main #btn:hover {
+        background-color: hsl(245, 63%, 64%);
+      }
+      main #btns #cancel {
+        color: var(--desaturated-blue);
+      }
+      main #btns:hover #cancel {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="top-bg">
+        <img
+          src="./images/illustration-hero.svg"
+          alt="illustration hero image"
+        />
+      </div>
+      <div id="content">
+        <h1>Order Summary</h1>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div id="plan-section">
+          <img src="./images/icon-music.svg" alt="MUsic Icon" />
+          <div id="plan">
+            <h2>Annual Plan</h2>
+            <p>$59.99/year</p>
+          </div>
+          <a href="#">Change</a>
+        </div>
+        <div id="btns">
+          <a href="#" id="btn">Process to Payment</a>
+          <a href="#" id="cancel">Cancel Order</a>
+        </div>
+      </div>
+    </main>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
 </html>
