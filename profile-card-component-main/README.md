@@ -9,7 +9,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ![](Screenshot.png)
 
 
-### Links
+### Link
 
 - [Demo](https://azeezqad.github.io/frontend-mentor-challenges/profile-card-component-main/)
 
