@@ -10,7 +10,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 ![](Screenshot.png)
 
 
-### Links
+### Link
 
 - [Demo](https://azeezqad.github.io/frontend-mentor-challenges/nft-preview-card-component-main/)
 
